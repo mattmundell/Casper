@@ -135,17 +135,25 @@
                 ],
                 "default": "Light"
             },
-            "header_button_background": {
+            "text_color": {
                 "type": "color",
-                "default": "#ffffff"
+                "default": "#15171a"
+            },
+            "text_color_mid": {
+                "type": "color",
+                "default": "#738a94"
+            },
+            "header_text_color": {
+                "type": "color",
+                "default": "#15171a"
             },
             "header_button_text_color": {
-                "type": "select",
-                "options": [
-                    "Light",
-                    "Dark"
-                ],
-                "default": "Dark"
+                "type": "color",
+                "default": "#15171a"
+            },
+            "header_button_bg_color": {
+                "type": "color",
+                "default": "#ffffff"
             },
             "post_image_width": {
                 "type": "select",

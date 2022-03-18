@@ -157,7 +157,7 @@ production stylesheet in assets/built/screen.css
     padding: 18vmin 4vmin;
     font-size: 2.5rem;
     font-weight: 400;
-    color: #fff;
+    color: var(--header-text-color);
     background: var(--ghost-accent-color);
 }
 
@@ -174,7 +174,7 @@ production stylesheet in assets/built/screen.css
     padding: 1vmin 4vmin;
     font-size: 1.6rem;
     line-height: 1.3em;
-    color: #fff;
+    color: var(--header-text-color);
     background: var(--ghost-accent-color);
 }
 
@@ -294,7 +294,7 @@ production stylesheet in assets/built/screen.css
 .gh-social svg {
     height: 22px;
     width: 22px;
-    fill: #fff;
+    fill: var(--header-text-color);
 }
 
 .gh-social-facebook svg {
@@ -305,12 +305,12 @@ production stylesheet in assets/built/screen.css
 a.gh-head-button {
     display: block;
     padding: 8px 15px;
-    color: var(--button-text-color, var(--color-darkgrey));
+    color: var(--header-button-text-color);
     font-weight: 500;
     letter-spacing: -0.015em;
     font-size: 1.5rem;
     line-height: 1em;
-    background: var(--button-bg-color, #fff);
+    background: var(--header-button-bg-color);
     border-radius: 30px;
 }
 
@@ -580,7 +580,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 .post-card-content-link {
     position: relative;
     display: block;
-    color: var(--color-darkgrey);
+    color: var(--color-text);
 }
 
 .post-card-content-link:hover {
@@ -630,7 +630,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 
 .post-card-excerpt {
     max-width: 56em;
-    color: color-mod(var(--color-midgrey) l(-8%));
+    color: var(--color-mid-text);
     font-family: var(--font-serif);
 }
 
@@ -699,7 +699,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     display: flex;
     flex-direction: column;
     margin: 0 0 0 8px;
-    color: color-mod(var(--color-midgrey) l(+10%));
+    color: var(--color-mid-text);
     font-size: 1.4rem;
     line-height: 1.2em;
     font-weight: 400;
@@ -710,7 +710,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
 }
 
 .post-card-byline-content a {
-    color: color-mod(var(--color-darkgrey) l(+15%));
+    color: var(--color-text);
     font-weight: 600;
 }
 
@@ -729,7 +729,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner::after {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
-    color: color-mod(var(--color-midgrey) l(-10%));
+    color: var(--color-mid-text);
     font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 500;
@@ -868,7 +868,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     justify-content: flex-start;
     align-items: center;
     margin: 0 0 0.5rem;
-    color: var(--color-midgrey);
+    color: var(--color-mid-text);
     font-size: 1.3rem;
     line-height: 1.4em;
     letter-spacing: 0.02em;
@@ -881,7 +881,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .article-title {
-    color: color-mod(var(--color-darkgrey) l(-5%));
+    color: var(--color-text);
 }
 
 .has-serif-title .article-title {
@@ -981,7 +981,7 @@ headings, text, images and lists. We deal with cards lower down. */
 /* [id] represents all headings h1-h6, reset all margins */
 .gh-content > [id] {
     margin: 0;
-    color: var(--color-darkgrey);
+    color: var(--color-text);
 }
 
 .has-serif-title .gh-content > [id] {
@@ -1110,7 +1110,7 @@ is the very first element in the post content */
     color: var(--color-wash);
     font-size: 1.4rem;
     line-height: 1.5em;
-    background: var(--color-darkgrey);
+    background: var(--color-text);
     border-radius: 5px;
     box-shadow: 0 2px 6px -2px rgba(0,0,0,.1), 0 0 1px rgba(0,0,0,.4);
 }
@@ -1190,11 +1190,11 @@ except for when immediately preceeded by a heading */
 }
 
 .kg-card.kg-header-card.kg-style-dark {
-    background: var(--color-darkgrey);
+    background: var(--color-text);
 }
 
 .kg-header-card.kg-style-light h2.kg-header-card-header {
-    color: color-mod(var(--color-darkgrey) l(-5%));
+    color: var(--color-text);
 }
 
 .has-serif-title .kg-header-card h2.kg-header-card-header {
@@ -1206,7 +1206,7 @@ except for when immediately preceeded by a heading */
 figcaption {
     padding: 1.5rem 1.5rem 0;
     text-align: center;
-    color: rgba(0,0,0,0.5);
+    color: var(--color-mid-text);
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 1.4em;
@@ -1313,7 +1313,7 @@ iframe.instagram-media + script + :not([id]) {
 }
 
 .post-full-content table th {
-    color: var(--color-darkgrey);
+    color: var(--color-text);
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.2px;
@@ -1350,7 +1350,7 @@ iframe.instagram-media + script + :not([id]) {
 }
 
 .article-byline-meta {
-    color: color-mod(var(--color-midgrey));
+    color: var(--color-mid-text);
     font-size: 1.4rem;
     line-height: 1.2em;
 }
@@ -1554,7 +1554,7 @@ iframe.instagram-media + script + :not([id]) {
 
 .author-profile p {
     margin: 0 0 1.5em;
-    color: color-mod(var(--color-midgrey) l(-8%));
+    color: var(--color-mid-text);
 }
 
 .author-profile-location {

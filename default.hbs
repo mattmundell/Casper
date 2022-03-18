@@ -11,10 +11,11 @@
 
     <style>
         :root {
-            {{#if @custom.header_button_background}}
-            --button-bg-color: {{@custom.header_button_background}};
-            {{/if}}
-            --button-text-color: {{#match @custom.header_button_text_color "Light"}}#fff{{else}}var(--color-darkgrey){{/match}};
+            --color-text: {{@custom.text_color}};
+            --color-mid-text: {{@custom.text_color_mid}};
+            --header-button-bg-color: {{@custom.header_button_bg_color}};
+            --header-button-text-color: {{@custom.header_button_text_color}};
+            --header-text-color: {{@custom.header_text_color}};
         }
     </style>
 
